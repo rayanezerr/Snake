@@ -38,12 +38,7 @@ class Snake():
                 del self.position[-1]
     
     def dessin(self, screen):
-        pg.draw.rect(screen, (0, 255, 103),(self.position[0][0], self.position[0][1], (self.GRID_SIZE/1.15), (self.GRID_SIZE/1.15)))
+        pg.draw.rect(screen, (0, 255, 75),(self.position[0][0], self.position[0][1], (self.GRID_SIZE), (self.GRID_SIZE)))
 
         for pos in self.position[1:]:
-            pg.draw.rect(screen, self.couleur,(pos[0], pos[1], (self.GRID_SIZE/1.15), (self.GRID_SIZE/1.15)))
-
-
-        
-
-
+            pg.draw.rect(screen, self.couleur,(pos[0], pos[1], (self.GRID_SIZE), (self.GRID_SIZE)))

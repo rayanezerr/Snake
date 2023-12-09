@@ -1,4 +1,3 @@
-from pyparsing import C
 from SnakeClass import *
 from ClassPomme import *
 from bouton import *
