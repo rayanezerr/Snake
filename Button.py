@@ -1,4 +1,5 @@
-from Constante import *
+from Constants import *
+
 
 class Bouton():
 
@@ -12,7 +13,6 @@ class Bouton():
 
     def dessin(self, surface):
         action = False
-
         pos = pg.mouse.get_pos()
         if self.rect.collidepoint(pos):
             if pg.mouse.get_pressed()[0] and not self.clicked:
